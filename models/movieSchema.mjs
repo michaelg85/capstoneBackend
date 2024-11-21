@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 
-const MovieSchema = new mongoose.Schema({
+const movieSchema = new mongoose.Schema({
     userId: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true, },
     title: { type: String, required: true, },
     genre: { type: [String], required: true, }, //Array of strings for multiple genres
@@ -11,6 +11,6 @@ const MovieSchema = new mongoose.Schema({
 
 })
 
-const Movie = mongoose.model('movie', MovieSchema);
+const Movie = mongoose.model('Movie', movieSchema);
 
 export default Movie;
