@@ -31,8 +31,37 @@ created a server.mjs file
 
 created models folder
 
-created movieSchema
+created movieSchema.mjs in models folder
 
 updated server file
 
+created db.mjs in config folder
 
+created data.mjs in data folder
+
+updated server file
+
+tested
+
+created movieRoutes.mjs in routes folder
+
+created movieController.mjs in controllers folder
+
+tested
+
+updated server file
+
+tested
+
+
+
+
+
+
+
+
+HOW TO START THE SERVER/RUN THE SERVER
+
+npm start server
+
+npm run server

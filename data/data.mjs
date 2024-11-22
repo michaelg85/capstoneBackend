@@ -1,5 +1,5 @@
 const movie = [
-
+    { }
 ];
 
-export default movie
+export default movie;

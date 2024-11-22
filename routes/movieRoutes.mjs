@@ -1,5 +1,5 @@
 import express from "express";
-import movieController from "../controllers/movieController.mjs";
+import movieCTRL from "../controllers/movieController.mjs";
 
 const router = express.Router();
 
@@ -12,7 +12,7 @@ router
     .route('/:id')
     .get(movieCTRL.getOneMovie)
     .put(movieCTRL.updateOneMovie)
-    .delete(movieCTRL.deleteOneMovie)
+    .delete(movieCTRL.deleteOneMovie);
 
     
 export default router;

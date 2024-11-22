@@ -1,8 +1,9 @@
 import express from 'express';
 import dotenv from 'dotenv';
+import connectDB from './config/db.mjs';
 import morgan from 'morgan';
 import cors from 'cors';
-import Movie from './models/movieSchema.mjs';
+import movieRoutes from './routes/movieRoutes.mjs'
 
 
 //Setups
@@ -19,24 +20,15 @@ app.use(cors());
 
 
 //Routes
-app.get("/", (req, res) => {
-    res.send(`<h1>Hello Ashley</h1>`);
-  });
+app.use('/api/movie', movieRoutes);
   
+//Environmetal Variables
+const PORT = process.env.PORT || 3000;
 
-
-
-
-
-
-
-  //Environmetal Variables
-  const PORT = process.env.PORT || 3000;
-
-  //Listen
-  app.listen(PORT, () => {
-    console.log(`Server is running on port: ${PORT}`);
-  });
+//Listen
+app.listen(PORT, () => {
+  console.log(`Server is running on port: ${PORT}`);
+});
 
 
 
