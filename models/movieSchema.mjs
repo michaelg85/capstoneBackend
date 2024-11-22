@@ -7,6 +7,7 @@ const movieSchema = new mongoose.Schema({
     genre: { type: [String], required: true, }, //Array of strings for multiple genres
     poster: { type: String, required: true, },
     year: { type: Number, required: true, },
+    plot: { type: String },
     createdAt: { type: Date, defatilt: Date.now, },
 
 })
