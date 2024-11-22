@@ -22,7 +22,7 @@ async function createMovie(req, res) {
 //Get all Movies
 async function getAllMovies(req, res) {
     try {
-        //Find All Movies from DB
+        //Find All {} Movies from DB
         let allMovies = await Movie.find({});
 
         //Return result
@@ -79,7 +79,17 @@ async function deleteOneMovie(req, res) {
     }
 }
 
-
+async function seedDB(req, res) {
+    try {
+      await Movie.deleteMany({}); //Delete everything
+      await Movie.create(movie); //Reseed with new data
+  
+      res.json({ msg: 'DB Seeded' });
+    } catch (err) {
+      console.error(err);
+      res.status(500).json({ msg: 'Server Error' });
+    }
+  }
 
 export default {
     createMovie,
@@ -87,5 +97,5 @@ export default {
     getOneMovie,
     updateOneMovie,
     deleteOneMovie,
-
+    seedDB,
 };

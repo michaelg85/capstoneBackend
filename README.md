@@ -43,9 +43,9 @@ updated server file
 
 tested
 
-created movieRoutes.mjs in routes folder
-
 created movieController.mjs in controllers folder
+
+created movieRoutes.mjs in routes folder
 
 tested
 

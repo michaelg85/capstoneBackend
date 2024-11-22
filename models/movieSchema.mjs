@@ -4,19 +4,14 @@ import mongoose from "mongoose";
 const movieSchema = new mongoose.Schema({
     userId: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true, },
     title: { type: String, required: true, },
-    genre: { type: String, required: true, },
-    poster: { type: String, required: true, },
-    year: { type: Number, required: true, },
+    genre: { type: String },
+    poster: { type: String },
+    year: { type: Number },
     plot: { type: String },
-    createdAt: { type: Date, defatilt: Date.now, },
+    createdAt: { type: Date, default: Date.now, },
+});
 
-})
+movieSchema.index({ category: 1 }); //this index should be created in ascending order
+// movieSchema.index({ category: -1 }); //this index should be created in descending order
 
-const Movie = mongoose.model('Movie', movieSchema);
-
-export default Movie;
-
-
-
-
-// genre: { type: [String], required: true, }, //Array of strings for multiple genres
+export default mongoose.model('Movie', movieSchema);

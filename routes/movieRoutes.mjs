@@ -14,5 +14,8 @@ router
     .put(movieCTRL.updateOneMovie)
     .delete(movieCTRL.deleteOneMovie);
 
-    
+router
+    .route('/seed')
+    .get(movieCTRL.seedDB);
+
 export default router;
