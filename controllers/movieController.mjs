@@ -20,7 +20,7 @@ async function createMovie(req, res) {
 }
 
 //Get all Movies
-async function getAllMovies(req, res) {
+async function getAllMovies(res) {
     try {
         //Find All {} Movies from DB
         let allMovies = await Movie.find({});
@@ -79,7 +79,8 @@ async function deleteOneMovie(req, res) {
     }
 }
 
-async function seedDB(req, res) {
+//Seed DB
+async function seedDB(res) {
     try {
       await Movie.deleteMany({}); //Delete everything
       await Movie.create(movie); //Reseed with new data

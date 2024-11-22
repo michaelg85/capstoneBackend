@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 
 const movieSchema = new mongoose.Schema({
-    userId: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true, },
+    userId: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
     title: { type: String, required: true, },
     genre: { type: String },
     poster: { type: String },
