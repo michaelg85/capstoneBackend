@@ -18,11 +18,11 @@ I am pulling from the third party OMDBapi (https://www.omdbapi.com/)
 
 In the terminal:
 
-1. **INSTAL DEPENDENCIES** `npm i'
+1. **INSTAL DEPENDENCIES** `npm i`
 
 2. **START THE SERVER** `npm start server`
-    (after initial setup)
-3. **RUN SERVER** `npm run server`
+    
+3. **RUN SERVER** `npm run server` (after initial setup)
     
 ## **PROCESS:**
 
