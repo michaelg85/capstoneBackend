@@ -14,6 +14,10 @@ router
     .put(movieCTRL.updateOneMovie)
     .delete(movieCTRL.deleteOneMovie);
 
+// router
+//     .route('/api/movies')
+//     .get(movieCTRL.getAllMovies);
+
 router
     .route('/seed')
     .get(movieCTRL.seedDB);

@@ -32,6 +32,20 @@ async function getAllMovies(req, res) {
   }
 }
 
+// // GET all movies
+// async function getAllMovies(req, res) {
+//   try {
+//     const redUserMovies = await Movie.find({ user: 'red' }).select('_id movie');
+//     const blueUserMovies = await Movie.find({ user: 'blue' }).select('_id movie');
+//     res.json({
+//       redUserMovies: redUserMovies.map(m => ({ _id: m._id, title: m.movie })),
+//       blueUserMovies: blueUserMovies.map(m => ({ _id: m._id, title: m.movie })),
+//     });
+//   } catch (error) {
+//     res.status(500).json({ error: 'Error fetching movies' });
+//   }
+// };
+
 //Get one Movie by ID
 async function getOneMovie(req, res) {
   try {

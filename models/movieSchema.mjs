@@ -8,6 +8,7 @@ const movieSchema = new mongoose.Schema({
   year: { type: Number },
   plot: { type: String },
   createdAt: { type: Date, default: Date.now },
+  listType: { type: String ,}
 });
 
 movieSchema.index({ category: 1 }); //this index will be created in ascending order

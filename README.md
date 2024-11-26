@@ -4,7 +4,7 @@
 
 ## **DESCRIPTION**
 
-I decided to create this app to help my wife and I, along with countless couples, pick whose movie will be watched!
+I decided to create this app to help my wife and I, along with countless couples, pick whose movie will be watched! Too much time is spent trying to decide. That ends here.
 
 There is also the ability to keep a list of movies you would like to watch, up to ten each.
 
@@ -16,9 +16,13 @@ I am pulling from the third party OMDBapi (https://www.omdbapi.com/)
 
 ## **START-UP**
 
-1. **START THE SERVER** `npm start server`
+In the terminal:
+
+1. **INSTAL DEPENDENCIES** `npm i'
+
+2. **START THE SERVER** `npm start server`
     (after initial setup)
-2. **RUN SERVER** `npm run server`
+3. **RUN SERVER** `npm run server`
     
 ## **PROCESS:**
 
