@@ -1,67 +1,130 @@
-CAPTONE PROJECT - WHOSE MOVIE?! v2.0
+# **CAPSTONE PROJECT - WHOSE MOVIE?** [Back-End]
+
+[Front-End] (https://github.com/michaelg85/capstoneFrontend)
+
+## **DESCRIPTION**
 
 I decided to create this app to help my wife and I, along with countless couples, pick whose movie will be watched!
-This version will also include the ability to keep a list of movies you's like to watch.
+
+There is also the ability to keep a list of movies you would like to watch, up to ten each.
 
 Currently the status of the build is working...
 
-I will be pulling from the OMDBapi
+I am pulling from the third party OMDBapi (https://www.omdbapi.com/)
 
-This is a front end application, currently
+*This is a backend Express server*
 
-PROCESS:
+## **START-UP**
 
-create a backend Express server
+1. **START THE SERVER** `npm start server`
+    (after initial setup)
+2. **RUN SERVER** `npm run server`
+    
+## **PROCESS:**
 
-installed: 
-    express
-    nodemon
-    dotenv
-    morgan
-    cors
-    mongoose
+### **Create a Back-End Express server**
 
-created a GitHub repo and committed the project 
+Installed: 
+    -express
+    -nodemon
+    -dotenv
+    -morgan
+    -cors
+    -mongoose
 
-created a .env file 
+-Created a GitHub repo and committed the project 
 
-added .env to a .gitignore file
+-Created a .env file 
 
-created a server.mjs file
+-Added .env to a .gitignore file
 
-created models folder
+-Created a server.mjs file
 
-created movieSchema.mjs in models folder
+-Created models folder
 
-updated server file
+-Created movieSchema.mjs in models folder
 
-created db.mjs in config folder
+-Updated server file
 
-created data.mjs in data folder
+-Created db.mjs in config folder
 
-updated server file
+-Created data.mjs in data folder
 
-tested
+-Updated server file
 
-created movieController.mjs in controllers folder
+-Tested
 
-created movieRoutes.mjs in routes folder
+-Created movieController.mjs in controllers folder
 
-tested
+-Created movieRoutes.mjs in routes folder
 
-updated server file
+-Tested
 
-tested
+-Updated server file
+
+-Tested
+
+-All routes functioning!
+
+### **Create a Front-End React App**
+
+Installed: 
+   -axios
+   -react-router-dom
+
+-Wrapped `<App />` in `<BrowserRouter>` in the main.jsx file
+
+-Created a GitHub repo and committed the project 
+
+-Created a .env file 
+
+-Added .env to a .gitignore file
+
+-Set up a folder within the src folder for pages
+
+-Created page files:
+   -AboutUs.jsx
+   -Help.jsx
+   -Home.jsx
+   -NotFound.jsx
+   -OneVOne.jsx
+   -Search.jsx
+
+-Created a utilities folder within the src folder
+
+-Created a controller.mjs file inside the utilities folder
+
+-Created a components folder within the src folder
+
+-Created components:
+   -**Nav.jsx** with page navigation
+   -**Form.jsx** with movie search bar
+   -**MovieDisplay.jsx** with  basic search results
+   -**RedList.jsx** with list display
+   -**RedActions.jsx** with list functions
+   -**BlueList.jsx** eith list display
+   -**BlueActions.jsx** with list functions
+   -**SearchMovieForm** with movie searchbar
+   -**SearchMovieDisplay** with comprehensive search results
+      OneVOne [folder]
+      -**OneForm** searchbar for 1v1
+      -**OneMovieDisplay** basic search results for 1v1
+      -**RedForm** red searchbar
+      -**RedMovieDisplay** red search result
+      -**BlueForm** blue searchbar
+      -**BlueMovieDisplay** blue search result
+      -**RandomChoice** random choice function
+      -**RandomChoiceDisplay** random choice result
+
+-Updated my styles inline as well as in the app.css file frequently
+
+
+### **DEVELOPER CONTACT INFO**
+Michael A Gawrych
+magawrych85@gmail.com
+GitHub - michaelg85
 
 
 
 
 
-
-
-
-HOW TO START THE SERVER/RUN THE SERVER
-
-npm start server
-
-npm run server
